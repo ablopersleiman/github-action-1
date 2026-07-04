@@ -4,12 +4,25 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: print greeting
-        run: echo "Hello World!"
-      - name: pring goodbye
+      - name: print set-1
+        run: echo "print set-1!"
+      - name: print set-1
         run: |
-          echo "Done.. GoodBye 1"
-          echo "Done.. GoodBye 2"
-          echo "Done.. GoodBye 3"
-          echo "Done.. GoodBye 4"
+          echo "Done.. set-1"
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print set-2
+        run: echo "print set-2!"
+      - name: print set-2
+        run: |
+          echo "Done.. set-2"
+  job-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print set-3
+        run: echo "print set-3!"
+      - name: print set-3
+        run: |
+          echo "Done.. set-3"
         
