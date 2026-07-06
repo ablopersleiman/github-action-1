@@ -1,0 +1,12 @@
+name: Output Information
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Output Information
+        run: |
+          echo "This is the output information from the workflow."
+          echo "${{ toJson(github) }} This is the GitHub object that triggered the workflow."
+          echo "${{ github.workflow }} workflow has been triggered."
+          echo "You can add more details here as needed."
