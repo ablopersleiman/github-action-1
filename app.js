@@ -1,7 +1,12 @@
-export function printHelloWorld() {
-  console.log("Hello World!");
+function printHelloWorld() {
+  console.log('Hello World!');
 }
 
-export function printParameter(param) {
+function printParameter(param) {
   console.log(param);
 }
+
+export default {
+  printHelloWorld,
+  printParameter,
+};
