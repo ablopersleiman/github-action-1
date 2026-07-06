@@ -1,5 +1,5 @@
 name: github-workflow-1
-on: workflow_dispatch
+on: push
 jobs:
   job-1:
     needs: [job-4,job-5]
